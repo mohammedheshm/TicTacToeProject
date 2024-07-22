@@ -1,0 +1,9 @@
+.round-button {
+    -fx-background-color: transparent; /* Makes background transparent to show image */
+    -fx-background-radius: 50%; /* Makes the button round */
+    -fx-border-radius: 50%; /* Rounds the border */
+    -fx-border-width: 2; /* Optional: border width */
+    -fx-border-color: #000000; /* Optional: border color */
+    -fx-padding: 0; /* Optional: remove padding */
+    -fx-shape: "M 0,0 H 1 V 1 H 0 Z"; /* Custom shape, optional */
+}

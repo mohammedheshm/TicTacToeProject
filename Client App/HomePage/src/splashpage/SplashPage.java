@@ -3,9 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package homepage;
+package splashpage;
 
+import java.io.IOException;
 import javafx.application.Application;
+import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -15,16 +17,21 @@ import javafx.stage.Stage;
  *
  * @author user
  */
-public class HomePage extends Application {
+public class SplashPage extends Application {
     
     @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+    public void start(Stage stage) throws IOException {
+        
+       
+
+        Parent root = FXMLLoader.load(getClass().getResource("FXMLSplash.fxml"));
         
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
         stage.show();
+  
+    
     }
 
     /**
